@@ -50,15 +50,31 @@
                     I expect to constantly engage in learning updating and widening my knowledge in the Information Technology field.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experiance</p>
-                        <p class="tab-links">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
                     </div>
-                    <div class="tab-content">
+                    <div class="tab-content Active-tab" id="Skills">
                         <ul>
                             <li><span>UI UX</span><br>Design WEb /App Interface</li>
                             <li><span>Web Development</span><br>Design WEb /App Interface</li>
                             <li><span>App Development</span><br>Design WEb /App Interface</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="Experiance">
+                        <ul>
+                            <li><span>2021 - Currennt</span><br>Design WEb /App Interface</li>
+                            <li><span>2019 - 2022</span><br>Design WEb /App Interface</li>
+                            <li><span>2021 - 2023</span><br>Ready for InternShip</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>O/L</span><br>Design WEb /App Interface</li>
+                            <li><span>A/L</span><br>Design WEb /App Interface</li>
+                            <li><span>Univercity</span><br>Ready for InternShip</li>
                         </ul>
                     </div>
             </div>
@@ -67,6 +83,21 @@
 
     </div>
    </div>
+
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(tablinks of tablinks){
+            tablinks.classList.remove("active-link")
+        }
+    }
+
+
+
+   </script>
     
 </body>
 </html>
